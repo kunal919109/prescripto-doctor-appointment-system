@@ -12,7 +12,15 @@ const PORT = process.env.PORT || 4000;
 connectDB();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: [
+      "https://prescripto-frontend-q628.onrender.com",
+      "https://prescripto-admin-ymdq.onrender.com"
+    ],
+    credentials: true
+  })
+
+);
 
 app.use('/api/user', userRouter);
 app.use('/api/doctor', doctorRouter);
