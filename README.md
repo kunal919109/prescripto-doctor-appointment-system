@@ -397,27 +397,21 @@ The application is designed to provide a responsive experience across:
 
 ## 📸 Screenshots
 
-
-
-
-
-## 📸 Screenshots
-
 <table>
 <tr>
-<td><img src="screenshots/homepage.png.png" width="500"></td>
-<td><img src="screenshots/doctorslist.png.png" width="500"></td>
+<td><img src="Screenshots/homepage.png.png" width="500"></td>
+<td><img src="Screenshots/doctorslist.png.png" width="500"></td>
 </tr>
 <tr>
-<td><img src="screenshots/admindashboard.png.png" width="500"></td>
-<td><img src="screenshots/appoinmnets.png.png" width="500"></td>
+<td><img src="Screenshots/admindashboard.png.png" width="500"></td>
+<td><img src="Screenshots/appoinmnets.png.png" width="500"></td>
 </tr>
 <tr>
-<td><img src="screenshots/doctormanagement.png.png" width="500"></td>
-<td><img src="screenshots/doctorsdetails.png" width="500"></td>
+<td><img src="Screenshots/doctormanagement.png.png" width="500"></td>
+<td><img src="Screenshots/doctorsdetails.png" width="500"></td>
 </tr>
 </table>
-```
+
 
 ---
 
