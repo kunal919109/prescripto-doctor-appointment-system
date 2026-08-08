@@ -401,11 +401,22 @@ The application is designed to provide a responsive experience across:
 
 
 
-![Home Page](screenshots/home.png)
+## 📸 Screenshots
 
-![Admin Dashboard](screenshots/admin-dashboard.png)
-
-![Doctor Dashboard](screenshots/doctor-dashboard.png)
+<table>
+<tr>
+<td><img src="screenshots/homepage.png.png" width="500"></td>
+<td><img src="screenshots/doctorslist.png.png" width="500"></td>
+</tr>
+<tr>
+<td><img src="screenshots/admindashboard.png.png" width="500"></td>
+<td><img src="screenshots/appoinmnets.png.png" width="500"></td>
+</tr>
+<tr>
+<td><img src="screenshots/doctormanagement.png.png" width="500"></td>
+<td><img src="screenshots/doctorsdetails.png" width="500"></td>
+</tr>
+</table>
 ```
 
 ---
