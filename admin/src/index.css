@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary:         #5F6FFF;
+  --color-primary-dark:    #4A57E8;
+  --color-secondary:       #F0F4FF;
+  --color-accent:          #00C8A0;
+  --color-text-primary:    #1A1A2E;
+  --color-text-secondary:  #6B7280;
+  --color-border:          #E5E7EB;
+  --color-error:           #EF4444;
+  --color-warning:         #F59E0B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* Prevent horizontal overflow at all viewport widths */
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #1A1A2E;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  /* Ensure a minimum usable width */
+  min-width: 320px;
+}
+
+/* Ensure images don't exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* Global focus-visible fallback — ensures keyboard users always see an outline
+   even on elements that forget to include focus-visible utilities */
+:focus-visible {
+  outline: 2px solid #5F6FFF;
+  outline-offset: 2px;
+}
