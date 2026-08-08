@@ -408,7 +408,7 @@ The application is designed to provide a responsive experience across:
 </tr>
 <tr>
 <td><img src="Screenshots/doctormanagement.png.png" width="500"></td>
-<td><img src="Screenshots/doctorsdetails.png" width="500"></td>
+<td><img src="Screenshots/doctorsdetails.png.png" width="500"></td>
 </tr>
 </table>
 
