@@ -28,24 +28,31 @@ const Login = () => {
     setLoading(true);
 
     try {
-      // If the email matches the admin email env var, try admin login first
-      if (email === import.meta.env.VITE_ADMIN_EMAIL) {
-        try {
-          const { data } = await axios.post(`${backendUrl}/api/admin/login`, {
-            email,
-            password,
-          });
-
-          if (data.success) {
-            setAdminToken(data.token);
-            navigate('/admin-dashboard');
-            return;
-          }
-        } catch (adminErr) {
-          // Admin login failed — fall through to doctor login
+       try {
+      const { data } = await axios.post(
+        `${backendUrl}/api/admin/login`,
+        {
+          email,
+          password,
         }
+      );
+
+      console.log("ADMIN LOGIN RESPONSE:", data);
+
+      if (data.success) {
+        setAdminToken(data.token);
+        navigate("/admin-dashboard");
+        return;
       }
 
+      console.log("ADMIN LOGIN FAILED:", data);
+
+    } catch (adminErr) {
+      console.log(
+        "ADMIN LOGIN ERROR:",
+        adminErr.response?.data || adminErr.message
+      );
+    }
       // Fall back to doctor login
       try {
         const { data } = await axios.post(`${backendUrl}/api/doctor/login`, {
